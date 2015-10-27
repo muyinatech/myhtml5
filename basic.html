@@ -9,26 +9,31 @@
 </head>
 <body>
 
+<!-- headings -->
 <h1>This is a heading</h1>
 
 <h2>This is a heading</h2>
 
 <h3>This is a heading</h3>
 
+<!-- paragraphs -->
 <p>This is a paragraph.</p>
 
-<p title="Some tooltip text">This is a paragraph with title attribute.</p>
+<p title="Some tooltip text">This is a paragraph with title attribute.</p><!-- text displayed as tooltip -->
 
+<!-- links -->
 <a href="http://www.bbc.co.uk/news">This is a link</a>
 <a href="#calc">Go to Einstein calc</a>
-<a href="http://www.bbc.co.uk/news" target="_blank">Visit W3Schools!</a>
+<a href="http://www.bbc.co.uk/news" target="_blank">Visit bbc.co.uk</a><!-- open link in a new window -->
+
+<!-- images -->
 <br/>
-<img src="dog.jpg" width="229" height="220" alt="image of a dog">
+<img src="images/dog.jpg" width="229" height="220" alt="image of a dog">
 <hr>
-<img src="dog2.jpg" alt="image not found" width="229" height="220">
+<img src="images/dog2.jpg" alt="image not found" width="229" height="220">
 
 <a href="http://www.bbc.co.uk/news">
-    <img src="dog.jpg" alt="HTML tutorial" width="115" height="110">
+    <img src="images/dog.jpg" alt="HTML tutorial" width="115" height="110">
 </a>
 
 <!-- defines a preformatted block of text -->
@@ -42,29 +47,37 @@
    Oh, bring back my Bonnie to me.
 </pre>
 
+<!-- formatted text -->
 <h2>HTML
     <small>Small</small>
     Formatting
 </h2>
+
 <p><em>This text is emphasized</em>.</p>
 
 <h2>HTML
     <mark>Marked</mark>
     Formatting
 </h2>
+<!-- highlight text -->
+
 <p>My favorite color is
     <del>blue</del>
     red.
 </p>
+<!-- strikethrough for deleted text -->
+
 <p>My favorite
     <ins>color</ins>
     is red.
 </p>
+<!-- underline for inserted text -->
+
 <p>This is <sub>subscripted</sub> text.</p>
 
 <p>This is <sup>superscripted</sup> text.</p>
 
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><!-- quoted text -->
 
 <p>Here is a quote from WWF's website:</p>
 <blockquote cite="http://www.worldwildlife.org/who/index.html">
@@ -75,17 +88,18 @@
     close to 5 million globally.
 </blockquote>
 
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><!-- tooltip for abbreviation -->
 
-<p><kbd>File | Open...</kbd></p>
-<samp>
+<p><kbd>File | Open...</kbd></p><!-- Defines keyboard input -->
+<samp><!--Defines sample output from a computer program -->
     demo.example.com login: Apr 12 09:10:17
     Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
 </samp>
-<code>
+<code><!-- Defines a piece of computer code -->
     var person = {firstName:"John", lastName:"Doe", age:50}
 </code>
-<code>
+
+<!-- preserves spaces and line breaks -->
 <pre>
 var person = {
     firstName:"John",
@@ -94,11 +108,10 @@ var person = {
     eyeColor:"blue"
 }
 </pre>
-</code>
 
 <p>Einstein wrote:</p>
 
-<p id="calc"><var>E = m c<sup>2</sup></var></p>
+<p id="calc"><var>E = m c<sup>2</sup></var></p><!-- Defines a variable -->
 
 </body>
 </html>
