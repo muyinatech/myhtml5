@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- defer means download immediately but defer execution until after the browser has received the closing </html> tag.
+    <script type="text/javascript" defer src="example.js"></script>
+	-->
+
+    <!-- async means download immediately and to indicate that the page need not wait for the script to be downloaded and executed before continuing to load. Also no need to wait for another script to load and execute before it runs. As the scripts run asynchronously. The order of the scripts running is not guaranteed. Execution is deferred until after the browser has received the closing </html> tag.
+    <script type="text/javascript" async src="example.js"></script>
+	-->	
+</head>
+<body>
+<h1>Javascript example</h1>
+
+<!-- script should be at the bottom -->
+<script type="text/javascript" src="example.js">
+
+</script>
+<noscript>
+    <p>This page requires a JavaScript enabled browser.</p>
+</noscript>
+</body>
+</html>
