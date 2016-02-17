@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas - Line examples</title>
+    <script>
+        function loader() {
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+
+            // create a line
+            context.moveTo(0,0);
+            context.lineTo(200,100);
+            context.stroke();
+
+            // create a hollow triangle
+            context.beginPath();
+            context.strokeStyle = "#FF0000";
+            context.moveTo(110,205);
+            context.lineTo(110,125);
+            context.lineTo(30,205);
+            context.closePath();
+            context.stroke();
+
+            // create a filled triangle
+            context.fillStyle = "#0000FF";
+            context.beginPath();
+            context.moveTo(225, 25);
+            context.lineTo(305, 25);
+            context.lineTo(225, 105);
+            context.closePath();
+            context.fill();
+
+            // create bezier curve
+            context.beginPath();
+            context.strokeStyle = "#00FF00";
+            context.moveTo(20,20); // starting point
+            context.bezierCurveTo(20,100,200,100,200,20); // bot-left x,y then bot-right x,y then end point
+            context.stroke();
+
+            // create quadratic curve
+            context.beginPath();
+            context.strokeStyle = "#FFFF00";
+            context.moveTo(20,120);
+            context.quadraticCurveTo(20,200,250,120); // bot-left x,y  then end point
+            context.stroke();
+
+            // create arc which is a circle
+            context.beginPath();
+                        context.strokeStyle = "#000000";
+            context.arc(95,250,40,0,2*Math.PI); // x,y center, radius, then starting angle, in radians (0 is at the 3 o'clock position of the arc's circle),
+                                           // then ending angle, in radians (2*Math.PI for circle)
+            context.stroke();
+
+            // create arc
+            context.beginPath();
+            context.arc(195,250,40,0,1.5*Math.PI);
+            context.stroke();
+        }
+    </script>
+</head>
+<body onload="loader()">
+    <h1>Line Examples</h1>
+    <canvas id="canvas" width="600" height="500">
+    </canvas>
+</body>
+</html>

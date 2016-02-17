@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas - Text examples</title>
+    <script>
+        function loader() {
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            context.font = 'italic 40px sans-serif';
+            context.strokeText('Hello!', 50, 100);
+        }
+    </script>
+</head>
+<body onload="loader()">
+<h1>Rectangle Examples</h1>
+<canvas id="canvas" width="200" height="200">
+</canvas>
+</body>
+</html>

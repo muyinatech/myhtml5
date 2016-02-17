@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas - Rectangle examples</title>
+    <script>
+        function loader() {
+            var canvas = document.getElementById('canvas');
+            var context = canvas.getContext('2d');
+            context.fillStyle="#FF0000"; // red
+            context.fillRect(30, 30, 75, 70); // x,y,w,h
+            context.fillStyle="#00FF00"; // green
+            context.fillRect(70, 50, 55, 70);
+            context.strokeRect(90, 50, 75, 50); // hollow rectangle
+        }
+    </script>
+</head>
+<body onload="loader()">
+    <h1>Rectangle Examples</h1>
+    <canvas id="canvas" width="600" height="500">
+    </canvas>
+</body>
+</html>
