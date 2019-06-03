@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <title>Formatting HTML</title>
 </head>
+
 <body>
-<p><b>This text is bold</b>.</p>
+    <p><b>This text is bold</b>.</p>
 
-<p><strong>This text is strong</strong>.</p>
+    <!-- semantic -->
+    <p><strong>This text is strong</strong>.</p>
 
-<p><i>This text is italic</i>.</p>
+    <p><i>This text is italic</i>.</p>
 
-<p><em>This text is emphasized</em>.</p>
+    <!-- semantic -->
+    <p><em>This text is emphasized</em>.</p>
 
-<!-- defines a preformatted block of text -->
+    <!-- defines a preformatted block of text -->
     <pre>
        My Bonnie lies over the ocean.
 
@@ -23,59 +27,72 @@
        Oh, bring back my Bonnie to me.
     </pre>
 
-<!-- formatted text -->
-<h2>HTML
-    <small>Small</small>
-    Formatting
-</h2>
+    <!-- formatted text -->
+    <h2>HTML
+        <small>Small</small>
+        Formatting
+    </h2>
 
-<p><em>This text is emphasized</em>.</p>
+    <p><em>This text is emphasized</em>.</p>
 
-<h2>HTML
-    <mark>Marked</mark>
-    Formatting
-</h2>
-<!-- highlight text -->
+    <h2>HTML
+        <mark>Marked</mark>
+        Formatting
+    </h2>
+    <!-- highlight text -->
 
-<p>My favorite color is
-    <del>blue</del>
-    red.
-</p>
-<!-- strikethrough for deleted text -->
+    <p>My favorite color is
+        <del>blue</del>
+        red.
+    </p>
+    <!-- strikethrough for deleted text -->
 
-<p>My favorite
-    <ins>color</ins>
-    is red.
-</p>
-<!-- underline for inserted text -->
+    <p>My favorite
+        <ins>color</ins>
+        is red.
+    </p>
+    <!-- underline for inserted text -->
 
-<p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
 
-<p>This is <sup>superscripted</sup> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
 
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><!-- quoted text -->
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><!-- quoted text -->
 
-<p>Here is a quote from WWF's website:</p>
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-    For 50 years, WWF has been protecting the future of nature.
-    The world's leading conservation organization,
-    WWF works in 100 countries and is supported by
-    1.2 million members in the United States and
-    close to 5 million globally.
-</blockquote>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature.
+        The world's leading conservation organization,
+        WWF works in 100 countries and is supported by
+        1.2 million members in the United States and
+        close to 5 million globally.
+    </blockquote>
 
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><!-- tooltip for abbreviation -->
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><!-- tooltip for abbreviation -->
 
-<p><kbd>File | Open...</kbd></p><!-- Defines keyboard input -->
-<samp><!--Defines sample output from a computer program -->
-    demo.example.com login: Apr 12 09:10:17
-    Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
-</samp>
-<code><!-- Defines a piece of computer code -->
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+
+    <p><kbd>File | Open...</kbd></p><!-- Defines keyboard input -->
+    <samp>
+        <!--Defines sample output from a computer program -->
+        demo.example.com login: Apr 12 09:10:17
+        Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+    </samp>
+    <code><!-- Defines a piece of computer code -->
     var person = {firstName:"John", lastName:"Doe", age:50}
 </code>
 
-<!-- preserves spaces and line breaks -->
+    <!-- preserves spaces and line breaks -->
     <pre>
     var person = {
         firstName:"John",
@@ -85,10 +102,10 @@
     }
     </pre>
 
-<p>Einstein wrote:</p>
+    <p>Einstein wrote:</p>
 
-<p id="calc"><var>E = m c<sup>2</sup></var></p><!-- Defines a variable -->
+    <p id="calc"><var>E = m c<sup>2</sup></var></p><!-- Defines a variable -->
 
-<abbr title="United Kingdom">UK</abbr> !-- title appears as tooltip -->
+    <abbr title="United Kingdom">UK</abbr> !-- title appears as tooltip -->
 
 </body>
