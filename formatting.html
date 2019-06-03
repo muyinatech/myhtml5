@@ -2,21 +2,25 @@
 <html lang="en-GB">
 
 <head>
-    <title>Formatting HTML</title>
+    <title>HTML Formatting</title>
+    <meta charset="utf-8">
 </head>
 
 <body>
-    <p><b>This text is bold</b>.</p>
+    <h1>HTML Formatting</h1>
+    <p><b>This text is bold.</b></p>
 
-    <!-- semantic -->
-    <p><strong>This text is strong</strong>.</p>
+    <!-- strong importance (semantic) -->
+    <p><strong>This text is strong.</strong></p>
 
-    <p><i>This text is italic</i>.</p>
+    <p><i>This text is italic.</i></p>
 
-    <!-- semantic -->
-    <p><em>This text is emphasized</em>.</p>
+    <!-- emphasis (semantic) -->
+    <p><em>This text is emphasized.</em></p>
 
-    <!-- defines a preformatted block of text -->
+
+    <p>Preformatted text block:-</p>
+    <!-- Preserves spaces and line breaks -->
     <pre>
        My Bonnie lies over the ocean.
 
@@ -26,41 +30,51 @@
 
        Oh, bring back my Bonnie to me.
     </pre>
+    <pre>
+        var person = {
+            firstName:"John",
+            lastName:"Doe",
+            age:50,
+            eyeColor:"blue"
+        }
+    </pre>
 
-    <!-- formatted text -->
+    <!-- small formatted text -->
     <h2>HTML
         <small>Small</small>
         Formatting
     </h2>
 
-    <p><em>This text is emphasized</em>.</p>
-
+    <!-- highlight text -->
     <h2>HTML
         <mark>Marked</mark>
         Formatting
     </h2>
-    <!-- highlight text -->
 
+    <!-- strikethrough for deleted text -->
     <p>My favorite color is
         <del>blue</del>
         red.
     </p>
-    <!-- strikethrough for deleted text -->
 
+    <!-- underline for inserted text -->
     <p>My favorite
         <ins>color</ins>
         is red.
     </p>
-    <!-- underline for inserted text -->
 
     <p>This is <sub>subscripted</sub> text.</p>
 
     <p>This is <sup>superscripted</sup> text.</p>
 
-    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><!-- quoted text -->
+    <h4>Inline quoted text:-</h4>
+    <p>WWF's goal is to: <q cite="http://www.worldwildlife.org/who/index.html">Build a future where people live in
+            harmony with nature.</q></p>
 
+    <h4>Block quoted text:-</h4>
     <p>Here is a quote from WWF's website:</p>
     <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        <!-- cite attribute specifies the url for the source of the quote -->
         For 50 years, WWF has been protecting the future of nature.
         The world's leading conservation organization,
         WWF works in 100 countries and is supported by
@@ -68,8 +82,10 @@
         close to 5 million globally.
     </blockquote>
 
+    <h4>Abbrevation:-</h4>
     <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><!-- tooltip for abbreviation -->
 
+    <!-- The <address> tag defines the contact information for the author/owner of a document or an article. -->
     <address>
         Written by John Doe.<br>
         Visit us at:<br>
@@ -78,34 +94,33 @@
         USA
     </address>
 
+    <!-- The <cite> tag defines the title of a work (e.g. a book, a song, a movie, a TV show, a painting, a sculpture, etc.). -->
     <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-    
+
+    <!-- Override the current text direction. -->
+    <h4>Bi-Directional Override:-</h4>
     <bdo dir="rtl">This line will be written from right to left</bdo>
 
-    <p><kbd>File | Open...</kbd></p><!-- Defines keyboard input -->
+    <!-- Defines keyboard input -->
+    <p><kbd>File | Open...</kbd></p>
+
+    <!--Defines sample output from a computer program -->
     <samp>
-        <!--Defines sample output from a computer program -->
         demo.example.com login: Apr 12 09:10:17
         Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
     </samp>
-    <code><!-- Defines a piece of computer code -->
+
+    <!-- Defines a piece of computer code -->
+    <h4>Code block:-</h4>
+    <code>
     var person = {firstName:"John", lastName:"Doe", age:50}
-</code>
+    </code>
 
-    <!-- preserves spaces and line breaks -->
-    <pre>
-    var person = {
-        firstName:"John",
-        lastName:"Doe",
-        age:50,
-        eyeColor:"blue"
-    }
-    </pre>
-
+    <!-- Defines a variable -->
     <p>Einstein wrote:</p>
+    <p id="calc"><var>E = m c<sup>2</sup></var></p>
 
-    <p id="calc"><var>E = m c<sup>2</sup></var></p><!-- Defines a variable -->
-
-    <abbr title="United Kingdom">UK</abbr> !-- title appears as tooltip -->
+    <!-- Defines a human-readable date/time. -->
+    <time datetime="2016-01-20">20 January 2016</time>
 
 </body>

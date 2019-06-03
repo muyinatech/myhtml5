@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
-    <title>Basic HTML</title>
+    <title>HTML Basic</title>
     <meta charset="utf-8">
     <meta name="keywords" content="HTML">
     <meta name="description" content="Basic HTML Examples">
-    <meta name="author" content="Some Body">
 </head>
+
 <body>
     <!-- headings -->
     <h1>This is a heading</h1>
@@ -24,20 +25,27 @@
     <a href="http://www.bbc.co.uk/news">This is a link</a>
     <a href="#calc">Go to Einstein calc</a>
     <a href="http://www.bbc.co.uk/news" target="_blank">Visit bbc.co.uk</a><!-- open link in a new window -->
+    <a href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+        download="firefox-latest-64bit-installer.exe">
+        Download Latest Firefox for Windows (64-bit) (English, US)
+    </a><!-- specify download attribute to provide a default save filename -->
+    <a href="mailto:nowhere@test.com?subject=This%20is%20the%20subject">Send email to nowhere</a>
+
 
     <!-- images -->
-    <br/>
+    <br />
     <img src="images/dog.jpg" width="229" height="220" alt="image of a dog">
     <hr>
     <img src="images/dog2.jpg" alt="image not found" width="229" height="220">
 
     <a href="http://www.bbc.co.uk/news">
-        <img src="images/dog.jpg" alt="HTML tutorial" width="115" height="110">
-    </a>
+        <img src="images/dog.jpg" alt="HTML tutorial" width="115" height="110" title="this is a dog">
+    </a> <!-- title attribute is not good for accessibility -->
 
     <p>Einstein wrote:</p>
 
     <p id="calc"><var>E = m c<sup>2</sup></var></p><!-- Defines a variable -->
 
 </body>
+
 </html>
