@@ -1,37 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
-<title>Form HTML</title>
+  <title>Form HTML</title>
 </head>
+
 <body>
 
-<form>
-First name:<br>
-<input type="text" name="firstname">
-<br>
-Last name:<br>
-<input type="text" name="lastname">
+  <form action="/form.html" target="_blank" method="GET">
+    <!-- method GET (default) or POST
+      each input field that requires its data to be submitted must have a name attribute.
+    -->
+    <fieldset>
+      <!-- group related fields -->
+      <legend>Personal information:</legend>
+      First name:<br>
+      <input type="text" name="firstname">
+      <br>
+      Last name:<br>
+      <input type="text" name="lastname">
+    </fieldset>
 
-<form>
-<input type="radio" name="sex" value="male" checked>Male
-<br>
-<input type="radio" name="sex" value="female">Female
-</form>
+    <p>What is your gender?
+      <input type="radio" name="sex" value="male" checked>Male
+      <input type="radio" name="sex" value="female">Female
+    </p>
+    <p>Select a car:
+      <select name="cars" size="3">
+        <!-- only 3 items visible in drop -->
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option><!-- selected by default -->
+        <option value="fiat">Fiat</option>
+        <option value="audi">Volkswagen</option>
+        <option value="audi">Audi</option>
+        <option value="audi">Ford</option>
+      </select>
+    </p>
 
-<br>
-<select name="cars">
-<option value="volvo">Volvo</option>
-<option value="saab" selected>Saab</option>
-<option value="fiat">Fiat</option>
-<option value="audi">Audi</option>
-</select>
-<br>
-<textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-</textarea>
-<br><br>
-<input type="submit" value="Submit">
-</form>
+    <p>Select a car:
+      <select name="cars" multiple>
+        <!-- allow multiple selections -->
+        <!-- only 3 items visible in drop -->
+        <option value="volvo">Volvo</option>
+        <option value="saab" selected>Saab</option><!-- selected by default -->
+        <option value="fiat">Fiat</option>
+        <option value="audi">Volkswagen</option>
+        <option value="audi">Audi</option>
+        <option value="audi">Ford</option>
+      </select>
+    </p>
+
+    Enter some text:<br>
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    <br><br>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+  </form>
 
 </body>
+
 </html>
